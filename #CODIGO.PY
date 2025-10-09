@@ -1,12 +1,15 @@
-def saludar(nombre):
-    return f"Hola {nombre}, este es un ejemplo de función en Python."
+def saludar(nombre, mensaje="que tengas un buen día"):
+    if not isinstance(nombre, str):
+        return "Error: El nombre proporcionado debe ser una cadena de texto."
 
-# NUEVA FUNCIÓN 
-def dividir(a, b):
-    if b == 0:
-        return "Error: División por cero"
-    return a / b
+    return f"Hola {nombre}, {mensaje}. Este es un ejemplo de función en Python."
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     print(saludar("Equipo"))
-    print(f"El resultado de la división es: {dividir(10, 2)}")
+    print(saludar("Ana", "bienvenida al proyecto"))
+
+    nombres = ["Carlos", "Sofía", "Luis"]
+    for persona in nombres:
+        print(saludar(persona))
+
+    print(saludar(123))

@@ -1,15 +1,14 @@
-def saludar(nombre, mensaje="que tengas un buen día"):
-    if not isinstance(nombre, str):
-        return "Error: El nombre proporcionado debe ser una cadena de texto."
+def saludar(nombre):
+    return f"Hola {nombre}, este es un ejemplo de función en Python."
 
-    return f"Hola {nombre}, {mensaje}. Este es un ejemplo de función en Python."
+# Nueva función de matemáticas: calcular área de un rectángulo
+def area_rectangulo(base, altura):
+    return base * altura
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     print(saludar("Equipo"))
-    print(saludar("Ana", "bienvenida al proyecto"))
 
-    nombres = ["Carlos", "Sofía", "Luis"]
-    for persona in nombres:
-        print(saludar(persona))
-
-    print(saludar(123))
+    # Probando la función de área
+    base = 5
+    altura = 3
+    print(f"El área del rectángulo de base {base} y altura {altura} es {area_rectangulo(base, altura)}")

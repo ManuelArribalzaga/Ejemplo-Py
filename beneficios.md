@@ -1,4 +1,5 @@
 SIMULACIÓN DE PROYECTO CON ROLES
+
 El control de versiones es un sistema que registra los cambios realizados en los archivos de un proyecto permitiendo saber quién hizo cada modificación, 
 recuperar versiones anteriores y trabajar en equipo sin conflictos. 
 En una simulación de proyecto con roles se aplica para coordinar el trabajo entre distintos participantes como el líder de proyecto, el equipo técnico, 
